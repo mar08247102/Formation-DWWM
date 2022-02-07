@@ -1,0 +1,116 @@
+
+body {
+  background: #dddddd;
+  margin: 0;
+}
+header {
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+}
+header h1 {
+  display: block;
+  width: auto;
+  padding-left: 20px;
+}
+header div {
+  width: auto;
+}
+header div img {
+  display: block;
+  height: 120px;
+  margin: 10px;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+.blocktexte {
+  width: 30%;
+  min-width: 300px;
+  background: white;
+  border-radius: 20px;
+  margin: 15px;
+}
+.blocktexte .title {
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 1px solid #777;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+}
+.blocktexte .contenu {
+  padding: 15px;
+  color: #555555;
+}
+.blocktexte .experience,
+.blocktexte .formation {
+  margin: 30px 0;
+}
+.blocktexte .job,
+.blocktexte .nomformation {
+  font-size: 32px;
+}
+
+.blocktexte ul {
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.blocktexte ul li {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo {
+  height: 120px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  section {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .blocktexte {
+    width: auto;
+    margin: 15px 5px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .blocktexte {
+    width: 20%;
+    margin: 15px 5px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .blocktexte {
+    width: 25%;
+  }
+}
+
+/* Large devices (desktops, 992px and up */
+@media (min-width: 992px) {
+  .blocktexte {
+    width: 30%;
+  }
+}
